@@ -1,0 +1,37 @@
+header>.Logo>a>img{
+    height: 60px;
+    padding: 10px;
+    float: left;
+} /*Header Logo*/ 
+.container{
+    width: 1000px;
+    height: auto;
+    background-color:white;
+    margin: auto;
+}
+
+.clearfix{
+    clear: both;
+}
+header>.MainMenu>ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    position: absolute;
+    top:20px;
+    left:450px;
+}
+
+header>.MainMenu>ul>li{
+    display: inline-block;
+    padding: 20px;
+}
+header>.MainMenu>ul>li>a{
+    color: #AE1ADC;
+    text-decoration: none;
+    display: block;
+}
+header>.MainMenu>ul>li>a:hover{
+    color: #FFC648;
+}
+
