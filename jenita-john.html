@@ -13,34 +13,29 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <!-- Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <!-- Bootstrap Font Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+    <!-- Boxicons Font-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!-- Style Sheet -->
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body>
+  <body  data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="0" tabindex="0">
     <!--NAVIGATION-->
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <nav class="navbar navbar-expand-md navbar-light bg-light px-3 fixed-top">
       <div class="container-fluid">
-        
          <!-- Brand JJ -->
-        <a class="navbar-brand" href="#">
-          <img src="assets/logo.png" alt="" height="45px">
-        </a>
-
+        <a class="navbar-brand" href="#home">J.J</a>
          <!--Toggle-->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>Menu
         </button>
-        
         <!--nav content-->
-        <div class="collapse navbar-collapse" id="navbarNav"> 
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav"> 
           <ul class="navbar-nav ms-auto">
-              <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Experience</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">TIL📚</a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#projects">Work</a></li>
+              <!-- <li class="nav-item"><a class="nav-link" href="#">Experience</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">TIL📚</a></li> -->
               <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>                          
           </ul>
         </div>
@@ -49,93 +44,70 @@
     <!--NAVIGATION-->
 
     <!--LANDING PAGE-->
-    <div id="home">
-      <div class="landing-text">
-        <h1>Jenita John</h1>
-        <h3>Computer Engineering Student</h3>
+        <div class="container-fluid justify-content-center text-center" id="home">
+        <div class="landing-text">
+         <img src="assets/logo.png" alt="">
+          <p class="lead"> Hello World👋 I'm </p>
+          <h1 class="display-1">Jenita John</h1>
+          <p class="lead">Computer Engineering Student @ Ryerson University</p>
+          <p class="lead">Software Engineer Intern @ Rapid7</p>
+          <p class="lead">CyberSecurity Enthusiast</p>
+          <a href="https://www.linkedin.com/in/jenitajohn/" target="_blank" class="rounded-pill btn" role="button">Connect With Me</a>
+        </div>
+        <div class="social">
+          <a href="https://github.com/jenita-john" target="_blank" class="home_social_icon"><i class='bx bxl-github'></i></a>
+          <a href="https://www.linkedin.com/in/jenitajohn/" target="_blank" class="home_social_icon"><i class='bx bxl-linkedin-square' ></i></a>
+        </div>
       </div>
-    </div>
-    <!--LANDING PAGE-->
 
-    <!-- ABOUT -->
-    <div class="padding">
-      <div class="container">
+    
+    <!--END OF LANDING PAGE-->
+
+      <!-- ABOUT -->
+    <div class="container" id="about">
         <div class="row">
-          <div class="col-sm-6">
-            <!-- Image Slider -->
-            <div id="slides" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#slides" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#slides" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#slides" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#slides" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              </div>
-              <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="assets/JenitaJohn.png"  class="d-block" height="477" width="636" alt="JenitaJohn">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>REC 2019</h5>
-                      <p> 1st Place Programming Competition</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="assets/RUHacks.png" class="d-block" height="477" width="636" alt="RUHacks with Shyana">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>RUHacks 2019</h5>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="assets/grp-4resized.png" class="d-block"  height="477" width="ms-auto" alt="REC 2018">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>REC 2018</h5>
-                      <p>2nd Place Re-engineering Competition</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="assets/rapid-7cropped.png" class="d-block"  height="477" width="500px" alt="REC 2018">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Virtual Internship</h5>
-                    </div>
-                  </div>
-              </div>
-            </div>
-            <!-- Image Slider -->
+          <div class="col-sm-6 text-center">
+            <img src="assets/Profile-bg-extended.png" class="rounded-3" alt="Jenita John profile picture">
           </div>
           <div class="col-sm-6 text-center">
-            <h2>About Me</h2>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Temporibus impedit odio aut neque voluptatibus modi minima iste, 
-              molestias libero corporis accusamus debitis deleniti sed obcaecati, 
-              rerum autem reprehenderit. Sequi, neque.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Temporibus impedit odio aut neque voluptatibus modi minima iste, 
-              molestias libero corporis accusamus debitis deleniti sed obcaecati, 
-              rerum autem reprehenderit. Sequi, neque.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Temporibus impedit odio aut neque voluptatibus modi minima iste, 
-              molestias libero corporis accusamus debitis deleniti sed obcaecati, 
-              rerum autem reprehenderit. Sequi, neque.
+            <h2 class="section-title display-5">About Me</h2>
+            <p class="lead content">I am currently in a 16 months internship at Rapid7 as Software Engineer...... I have also been accepted as a fellow at RTC for the year 2020 - 2021. 
             </p>
           </div>
         </div>
-      </div>
+        <div class="container">
+            <h2 class="section-sub-title">Accomplishments 🏆</h2>
+            <div class="list-group">
+            <hr>
+            <li class="lead list-group-item">
+              <h5>- 1ST PLACE AWARD</h5>
+              <p>Ryerson Engineering Competition 2019, Programming Category</p>
+            </li>
+            <li class="lead list-group-item">
+              <h5>- 2ND PLACE AWARD</h5>
+              <p>Ryerson Engineering Competition 2018, Re-engineering Category</p>
+            </li>
+            <li class="lead list-group-item">
+              <h5>- DEAN'S LIST</h5>
+              <p>Academic Year 2019 - 2020</p>
+            </li>
+             <li class="lead list-group-item">
+              <h5>- Letter of Achievement</h5>
+              <p>Ryerson Career Center, 2019</p>
+            </li>
+            </div>
+        </div>
     </div>
-    <!-- ABOUT -->
+    <!--END OF ABOUT -->
 
     <!--PROJECTS-->
-    <div class="container-fluid padding">
-    <div class="row welcome text-center">
-      <div class="col-12">
-        <h1 class="display-4">Projects</h1>
-        <hr>
-      </div>
-    </div>
-    </div>
+     <div class=" container offset" id="projects">
+     <p class="section-title display-6">Work</p>
     <!--Cards-->
     <div class="container-fluid padding">
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-6 gy-3">
       <div class="col">
-        <div class="card">
+        <div class="card mb-3" style="max-width: max-content;">
           <img class="card-img-top" src="assets/bg-1.jpg" alt="">
           <div class="card-body">
             <h4 class="card-title">Autonomous Road</h4>
@@ -146,7 +118,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card">
+        <div class="card mb-3" style="max-width: max-content;">
           <img class="card-img-top" src="assets/bg-1.jpg" alt="">
           <div class="card-body">
             <h4 class="card-title">Autonomous Road</h4>
@@ -157,7 +129,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card">
+        <div class="card mb-3" style="max-width: max-content;">
           <img class="card-img-top" src="assets/bg-1.jpg" alt="">
           <div class="card-body">
             <h4 class="card-title">Autonomous Road</h4>
@@ -168,7 +140,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card">
+        <div class="card mb-3" style="max-width: max-content;">
           <img class="card-img-top" src="assets/bg-1.jpg" alt="">
           <div class="card-body">
             <h4 class="card-title">Autonomous Road</h4>
@@ -179,7 +151,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card">
+        <div class="card mb-3" style="max-width: max-content;">
           <img class="card-img-top" src="assets/bg-1.jpg" alt="">
           <div class="card-body">
             <h4 class="card-title">Autonomous Road</h4>
@@ -190,7 +162,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card">
+        <div class="card mb-3" style="max-width: max-content;">
           <img class="card-img-top" src="assets/bg-1.jpg" alt="">
           <div class="card-body">
             <h4 class="card-title">Autonomous Road</h4>
@@ -201,108 +173,15 @@
         </div>
       </div>
     </div>
-    <!--PROJECTS-->
-
-    <!--EXPERIENCES-->
-    <div class="container">
-
-      <div class="top-section text-center">
-        <h1 class="display-4">Experience</h1>
-        <hr>
-      </div>
-
-      <div class="accordion accordion-flush" id="accordionFlushExample">
-
-        <!--RAPID7-->
-        <div class="accordion-item">
-          <div class="accordion-header"  id="flush-headingOne" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              <h2>The Planning Session</h2>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Neque non ut sit odio quae excepturi at nisi repellat. 
-                    Sed quidem a cupiditate. Deserunt mollitia laudantium ratione magnam deleniti, hic quo.
-                  </p>
-          </div>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Neque non ut sit odio quae excepturi at nisi repellat. 
-                Sed quidem a cupiditate. Deserunt mollitia laudantium ratione magnam deleniti, hic quo.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!--MATHHUB-->
-        <div class="accordion-item">
-          <div class="accordion-header"  id="flush-headingtwo" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsetwo" aria-expanded="false" aria-controls="flush-collapsetwo">
-              <h2>The Planning Session</h2>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Neque non ut sit odio quae excepturi at nisi repellat. 
-                    Sed quidem a cupiditate. Deserunt mollitia laudantium ratione magnam deleniti, hic quo.
-                  </p>
-          </div>
-          <div id="flush-collapsetwo" class="accordion-collapse collapse" aria-labelledby="flush-headingtwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Neque non ut sit odio quae excepturi at nisi repellat. 
-                Sed quidem a cupiditate. Deserunt mollitia laudantium ratione magnam deleniti, hic quo.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!--iBoost-->
-        <div class="accordion-item">
-          <div class="accordion-header"  id="flush-heading3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
-              <h2>The Planning Session</h2>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Neque non ut sit odio quae excepturi at nisi repellat. 
-                    Sed quidem a cupiditate. Deserunt mollitia laudantium ratione magnam deleniti, hic quo.
-                  </p>
-          </div>
-          <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Neque non ut sit odio quae excepturi at nisi repellat. 
-                Sed quidem a cupiditate. Deserunt mollitia laudantium ratione magnam deleniti, hic quo.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!--Other-->
-        <div class="accordion-item">
-          <div class="accordion-header"  id="flush-heading4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
-              <h2>The Planning Session</h2>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Neque non ut sit odio quae excepturi at nisi repellat. 
-                    Sed quidem a cupiditate. Deserunt mollitia laudantium ratione magnam deleniti, hic quo.
-                  </p>
-          </div>
-          <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Neque non ut sit odio quae excepturi at nisi repellat. 
-                Sed quidem a cupiditate. Deserunt mollitia laudantium ratione magnam deleniti, hic quo.
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-
-      </div>
     </div>
-    
-    <!--EXPERIENCES-->
+
+    <!-- END OF PROJECTS -->
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Javascript-->
+    <script src="js/main.js"></script>
 
   </body>
 </html>
