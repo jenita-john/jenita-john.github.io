@@ -59,6 +59,7 @@ body{
 h1,h2,p{
   margin: 0;
 }
+
 h5{
     color: var(--second-color);
     font-weight: 700;
@@ -77,17 +78,6 @@ a{
 }
 
 .section-title::after{
-    position: absolute;
-
-}
-.section-sub-title{
-    position:relative;
-    color: var(--second-color);
-    text-align: center;
-    padding-bottom: 1.5rem;
-}
-
-.section-sub-title::after{
     position: absolute;
 
 }
@@ -126,6 +116,7 @@ a{
     background-color: var(--third-color);
     padding-top: 3rem;
     padding-bottom: 2rem;
+    font-family: sans-serif;
 }
 
 #home img{
@@ -148,8 +139,9 @@ a{
 }
 
 /* === ABOUT ==== */
-#about {
-    padding-top: 3rem;
+/* #about {
+    max-width: 750px;
+    padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
@@ -169,7 +161,7 @@ a{
 .list-group-item{
     border-left: none;
     border-right: none;
-}
+} */
 /* === WORK === */
 
 #projects{
