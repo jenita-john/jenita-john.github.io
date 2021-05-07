@@ -4,7 +4,6 @@
 
 :root{
     --header-height: 3rem;
-    --font-semi: 600;
 }
 
 :root{
@@ -37,20 +36,18 @@ html{
 
 body{
     margin: var(--header-height) 0 0 0;
-    font-family: var(--body-font);
-    color: var(--second-color);
 }
 
 .btn{
     display: inline-block;
     color: #FFFFFF;
-    background-color: var(--fourth-color);
+    background-color: var(--first-color);
     margin:var(--mb-3);
     font-weight: var(--font-semi);
 }
 
 .btn:hover{
-    background-color: var(--first-color);
+    background-color: var(--fourth-color);
     color: #FFFFFF;
     font-weight: var(--font-semi);
     box-shadow: 0 10px 36px rgba(0, 0, 0, .15);
@@ -58,10 +55,6 @@ body{
 
 h1,h2,p{
   margin: 0;
-}
-h5{
-    color: var(--second-color);
-    font-weight: 700;
 }
 
 a{
@@ -77,17 +70,6 @@ a{
 }
 
 .section-title::after{
-    position: absolute;
-
-}
-.section-sub-title{
-    position:relative;
-    color: var(--second-color);
-    text-align: center;
-    padding-bottom: 1.5rem;
-}
-
-.section-sub-title::after{
     position: absolute;
 
 }
@@ -126,6 +108,23 @@ a{
     background-color: var(--third-color);
     padding-top: 3rem;
     padding-bottom: 2rem;
+    font-family: var(--body-font);
+}
+
+#home .txt-rotate{
+  position: relative;
+}
+
+#home .txt-rotate:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 15px;
+  width: 100%;
+  border: solid 6px var(--fourth-color);
+  border-color: var(--fourth-color) transparent transparent transparent;
+  border-radius: 50%;
 }
 
 #home img{
@@ -140,37 +139,13 @@ a{
     width: max-content;
     margin-bottom: var(--mb-2);
     font-size: 2rem;
-    color: var(--fourth-color);
-}
-
-.home_social_icon:hover{
     color: var(--first-color);
 }
 
-/* === ABOUT ==== */
-#about {
-    padding-top: 3rem;
-    padding-bottom: 2rem;
+.home_social_icon:hover{
+    color: var(--fourth-color);
 }
 
-#about .about-content{
-    padding-bottom: 3rem;
-}
-
-#about img{
-    max-width: 100%;
-    height: auto;
-}
-
-.card-body{
-    text-align: center;
-}
-
-.list-group-item{
-    border-left: none;
-    border-right: none;
-}
-/* === WORK === */
 
 #projects{
     padding-top: 3rem;
