@@ -14,6 +14,8 @@
   }
 :root{
     --body-font: 'Poppins', sans-serif;
+    --section-font: 'IBM Plex Sans', sans-serif;
+    --content-font: 'Roboto', sans-serif;
 }
 
 
@@ -67,6 +69,7 @@ a{
     color: var(--first-color);
     text-align: center;
     padding-bottom: 1.5rem;
+    font-family: var(--section-font);
 }
 
 .section-title::after{
@@ -146,16 +149,39 @@ a{
     color: var(--fourth-color);
 }
 
-
+/* ===WORK== */
 #projects{
     padding-top: 3rem;
     padding-bottom: 2rem;
+}
+
+#projects .card{
+    text-align: center;
+    max-width: max-content; 
+    height: 420px;
+    font-family: var(--content-font);
+}
+
+#projects .card .card-title{
+    color: var(--first-color);
+}
+
+.project_social_icon{
+    width: max-content;
+    margin-bottom: var(--mb-2);
+    font-size: 2rem;
+    color: var(--fourth-color);
+}
+
+.project_social_icon:hover{
+    color: var(--first-color);
 }
 
 /* == TIL == */
 #til{
     padding-top: 3rem;
     padding-bottom: 2rem;
+    font-family: var(--content-font);
 }
 
 /*== FOOTER ==*/ 
