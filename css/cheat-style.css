@@ -1,0 +1,66 @@
+/* === Variables === */
+:root{
+    --main-font:'Open Sans', sans-serif;
+}
+
+:root{
+    --first-color: #003D5B ;
+    --second-color: #334A51;
+    --third-color: #E6F4F1;
+    --fourth-color:#00A9BE;
+    --card-color: #CCD6E0;
+  }
+
+/* === Nav === */
+.navbar{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    /* background: rgba(0, 0, 0, 0.6)!important; */
+}
+
+.navbar-brand{
+    font-weight: 700;
+    letter-spacing: .1rem;
+    padding-left: .7rem;
+}
+
+.navbar-nav li{
+    padding-right: .7rem;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color:var(--second-color);
+    padding-top: .8rem;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover{
+    color: var(--fourth-color);
+}
+
+.page-title{
+    font-family: var(--main-font) ;
+    font-weight: 600;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.content{
+    max-width: 800px;
+}
+
+p{
+    font-family: var(--main-font);
+}
+
+.bold-txt{
+    font-weight: 1000;
+}
+.card{
+    background-color: var(--card-color) ;
+    border: none;
+    margin-bottom: 1rem;
+}
+
