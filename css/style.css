@@ -183,9 +183,9 @@ a{
    width: 100%;
    margin-bottom: 2rem;
    display: inline-block;
-   color: #FFFFFF;
-   background-color: var(--fourth-color);
-   margin:var(--mb-3);
+   color: #000;
+   background-color: #F9F871;
+   font-family: var(--content-font);
    font-weight: var(--font-semi);
    border: none;
 }
