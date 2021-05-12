@@ -177,6 +177,23 @@ a{
     color: var(--first-color);
 }
 
+/* EMOJI SECTION */
+
+.fun{
+   width: 100%;
+   margin-bottom: 2rem;
+   display: inline-block;
+   color: #FFFFFF;
+   background-color: var(--fourth-color);
+   margin:var(--mb-3);
+   font-weight: var(--font-semi);
+   border: none;
+}
+
+.gif{
+    max-width: 100%;
+}
+
 /* == TIL == */
 #til{
     padding-top: 3rem;
