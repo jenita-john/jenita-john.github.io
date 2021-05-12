@@ -1,5 +1,5 @@
 ScrollReveal().reveal('.container-fluid');
-ScrollReveal().reveal('.container');
+ScrollReveal().reveal('.section-title', {delay:500});
 
 
 var TxtRotate = function(el, toRotate, period) {
