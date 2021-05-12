@@ -152,6 +152,11 @@ a{
     padding-bottom: 2rem;
 }
 
+.fun{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
 /* == TIL == */
 #til{
     padding-top: 3rem;
