@@ -1,3 +1,6 @@
+window.addEventListener('DOMContentLoaded', (event) => {
+    getVisitCount();
+});
 ScrollReveal().reveal('.container-fluid');
 ScrollReveal().reveal('.section-title', {delay:500});
 
@@ -19,6 +22,10 @@ const getVisitCount = () => {
       });
     return count;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9d21eeb (modified js)
 
 var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
