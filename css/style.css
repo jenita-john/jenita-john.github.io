@@ -109,7 +109,7 @@ a{
 #home{
     height: calc(100vh - 5rem);
     background-color: var(--third-color);
-    padding-top: 2.5rem;
+    padding-top: 3rem;
     padding-bottom: 2rem;
     font-family: var(--body-font);
 }
