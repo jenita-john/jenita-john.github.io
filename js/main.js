@@ -4,8 +4,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 ScrollReveal().reveal('.container-fluid');
 ScrollReveal().reveal('.section-title', {delay:500});
 
-const localApi = '';
-const functionApi = ''; 
+const functionApi = 'http://localhost:7071/api/GetResumeCounter'; 
 
 const getVisitCount = () => {
     let count = 30;
@@ -22,7 +21,6 @@ const getVisitCount = () => {
       });
     return count;
 }
-
 
 var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
