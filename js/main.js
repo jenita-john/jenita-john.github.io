@@ -1,6 +1,27 @@
+window.addEventListener('DOMContentLoaded', (event) => {
+    getVisitCount();
+});
 ScrollReveal().reveal('.container-fluid');
 ScrollReveal().reveal('.section-title', {delay:500});
 
+const functionApi = 'https://getresume.azurewebsites.net/api/GetResumeCounter?code=U1necFmxTLkXquQblqaFdMaU40xy6fzoSuEE0a1DcZqwdyAJ4jbyXg=='; 
+const localfunctionApi = 'http://localhost:7071/api/GetResumeCounter'; 
+
+const getVisitCount = () => {
+    let count = 30;
+    fetch(functionApi)
+    .then(response => {
+        return response.json()
+    })
+    .then(response => {
+        console.log("Website called function API.");
+        count = response.count;
+        document.getElementById('counter').innerText = count;
+    }).catch(function(error) {
+        console.log(error);
+      });
+    return count;
+}
 
 var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;

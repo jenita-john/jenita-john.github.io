@@ -10,6 +10,9 @@ Curved Underline: https://codepen.io/rukyasu/pen/jvZaNp \
 Font: https://boxicons.com/ \
 Bootstrap Examples: https://freefrontend.com/bootstrap-code-examples/
 
+# PROJECT INSPIRATIONS
+ACG Tutorial: https://www.youtube.com/watch?v=ieYrBWmkfno
+
 # PHOTO CREDITS:
 Photo by David Skyrius from Pexels \
 Photo by Digital Buggu from Pexels
