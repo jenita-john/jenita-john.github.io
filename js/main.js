@@ -4,7 +4,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
 ScrollReveal().reveal('.container-fluid');
 ScrollReveal().reveal('.section-title', {delay:500});
 
-const functionApi = 'http://localhost:7071/api/GetResumeCounter'; 
+const functionApi = 'https://getresume.azurewebsites.net/api/GetResumeCounter?code=U1necFmxTLkXquQblqaFdMaU40xy6fzoSuEE0a1DcZqwdyAJ4jbyXg=='; 
+const localfunctionApi = 'http://localhost:7071/api/GetResumeCounter'; 
 
 const getVisitCount = () => {
     let count = 30;
