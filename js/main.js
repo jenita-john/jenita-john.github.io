@@ -1,6 +1,3 @@
-window.addEventListener('DOMContentLoaded', (event) => {
-    getVisitCount();
-});
 ScrollReveal().reveal('.container-fluid');
 ScrollReveal().reveal('.section-title', {delay:500});
 
