@@ -1,0 +1,70 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Main gradient matching your website -->
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ff0066;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ff99;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Subtle glow effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Dark background with transparency -->
+    <radialGradient id="bgGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Dark background circle -->
+  <circle cx="50" cy="50" r="48" fill="url(#bgGradient)" stroke="url(#mainGradient)" stroke-width="2" opacity="0.8"/>
+  
+  <!-- Neural network nodes -->
+  <circle cx="25" cy="25" r="3" fill="url(#mainGradient)" opacity="0.8" filter="url(#glow)"/>
+  <circle cx="50" cy="20" r="4" fill="url(#mainGradient)" filter="url(#glow)"/>
+  <circle cx="75" cy="30" r="3" fill="url(#mainGradient)" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="20" cy="50" r="3" fill="url(#mainGradient)" opacity="0.7" filter="url(#glow)"/>
+  <circle cx="45" cy="55" r="5" fill="url(#mainGradient)" filter="url(#glow)"/>
+  <circle cx="80" cy="60" r="3" fill="url(#mainGradient)" opacity="0.8" filter="url(#glow)"/>
+  <circle cx="30" cy="80" r="3" fill="url(#mainGradient)" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="65" cy="85" r="4" fill="url(#mainGradient)" filter="url(#glow)"/>
+  
+  <!-- Neural network connections -->
+  <path d="M25 25 L50 20 L75 30 L80 60 L65 85 L30 80 L20 50 L25 25" 
+        stroke="url(#mainGradient)" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <path d="M50 20 L45 55 L65 85" stroke="url(#mainGradient)" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <path d="M25 25 L45 55 L75 30" stroke="url(#mainGradient)" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <path d="M20 50 L45 55 L80 60" stroke="url(#mainGradient)" stroke-width="1.5" fill="none" opacity="0.5"/>
+  
+  <!-- Stylized JJ initials integrated into the neural network (FLIPPED) -->
+  <!-- First J (flipped) -->
+  <path d="M40 35 L40 55 Q40 60 35 60 Q30 60 30 55 L30 50" 
+        stroke="url(#mainGradient)" stroke-width="3" fill="none" stroke-linecap="round" filter="url(#glow)"/>
+  <circle cx="40" cy="30" r="2" fill="url(#mainGradient)" filter="url(#glow)"/>
+  
+  <!-- Second J (flipped) -->
+  <path d="M60 35 L60 55 Q60 60 55 60 Q50 60 50 55 L50 50" 
+        stroke="url(#mainGradient)" stroke-width="3" fill="none" stroke-linecap="round" filter="url(#glow)"/>
+  <circle cx="60" cy="30" r="2" fill="url(#mainGradient)" filter="url(#glow)"/>
+  
+  <!-- Subtle floating particles for AI effect -->
+  <circle cx="15" cy="15" r="1" fill="#00d4ff" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="85" cy="15" r="1" fill="#ff0066" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="15" cy="85" r="1" fill="#00ff99" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="85" cy="85" r="1" fill="#00d4ff" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>
